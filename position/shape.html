@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box sub box</title>
+</head>
+<style>
+    *{
+        margin: 0; 
+        box-sizing: border-box;
+    }
+    .bg1{
+        background-color: tomato;
+    }
+    .bg2{
+        background-color: teal;
+    }
+    .bg3{
+        background-color: royalblue;
+    }
+    .bg4{
+        background-color: gold;
+    }
+    .main{
+        width: 400px;
+        height: 400px;
+        background-color:rgba(70, 243, 1, 0.808);
+        margin: 20vh auto;
+        position: relative;
+        border-radius: 50%;
+        
+    }
+    .box{
+       width: 100px; 
+       height: 100px;
+       position: absolute;
+       border: 10px solid white;
+       
+       border-radius: 50%;
+       text-align: center;
+       font-size: 2rem;
+       line-height: 80px;
+
+       
+    }
+    
+    
+    .p1{
+        left: 150px;
+        bottom: 350px;
+    }
+    .p2{
+        top: 150px;
+        left: 350px;
+    }
+    .p3{
+        left: 150px;
+        top: 350px;
+    }
+    .p4{
+        right: 350px;
+        top: 150px;
+    }
+</style>
+<body>
+    <div class="main">
+      <div class="box bg1 p1">12</div> 
+      <div class="box bg2 p2">3</div> 
+      <div class="box bg3 p3">6</div>
+      <div class="box bg4 p4">9</div>
+    </div>
+    
+</body>
+</html>
